@@ -1,0 +1,64 @@
+@import 'colors';
+.HomePage{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .welcomePage{
+        background-image: url(https://media.istockphoto.com/id/1096460950/vector/vector-set-of-design-templates-and-elements-for-e-commerce-in-trendy-linear-style-seamless.jpg?s=612x612&w=0&k=20&c=GhmLjjeTXzmhzX4YZ0jA6g-k7245d2i4RjIbGK2QIdY=);
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+        height: 70vh;
+        padding-top: 15vh;
+        padding-left: 40%;
+        >h1{
+            font-size: 5rem;
+            text-transform: capitalize;
+            justify-content: center;
+        }
+        >h2{
+            font-size: 3rem;
+            text-transform: capitalize;
+        }
+    }
+    .bounce{
+        font-size: 2rem;
+        text-decoration: none;
+        color: $backgroundColor;
+        scroll-behavior: smooth;
+    }
+
+    >.secondHalf{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        >.heading{
+            text-transform: capitalize;
+            text-decoration: underline;
+            font-size: 4rem;
+        }
+        >.productConainer{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
+
+
+@keyframes bounce {
+    0%   { transform: scale(1,1) translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-55px);}
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    58%  { transform: scale(1,1) translateY(-7px); }
+    65%  { transform: scale(1,1) translateY(0);}
+    100% { transform: scale(1,1) translateY(0);}
+}
+
+.bounce {
+animation: bounce 1s ease infinite;
+}

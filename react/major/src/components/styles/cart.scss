@@ -1,0 +1,37 @@
+@import 'colors';
+.cart{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    >div{
+        display: flex;
+        flex-direction: column;
+        background-color: $backgroundColor;
+        color: $theme;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 1rem;
+        >.products{
+            width: 90%;
+        }
+        >.summary{
+            width: 90%;
+            margin:1rem;
+            >h2{
+                text-transform: capitalize;
+                text-align: center;
+            }
+        }
+        >button{
+            padding: 1rem;
+            text-decoration: none;
+            a{
+                color: $backgroundColor;
+                text-decoration: none;
+            }
+        }
+    }
+}

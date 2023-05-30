@@ -1,0 +1,32 @@
+.cartItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantityButton{
+    height: 20px;
+    margin: 5px;
+}
+
+.quantityButton:nth-child(1){
+    background-color: red;
+}
+
+.quantityButton:nth-child(3){
+    background-color: green;
+}
+
+.removeButton{
+    background-color: red;
+    padding: 10px;
+    color: white;
+}

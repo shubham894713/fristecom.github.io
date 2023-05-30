@@ -1,0 +1,25 @@
+.addProduct{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: darkgray;
+    padding: 20px;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+}
+.inputHead{
+    margin-right: 10px;
+}
+.formInput{
+    border-radius: 20px;
+    padding: 10px;
+}
+.formButton{
+    padding: 10px;
+    background-color: green;
+    border-radius: 20px;
+    width: 100px;
+    color: white;
+}

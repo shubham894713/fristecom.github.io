@@ -1,0 +1,30 @@
+@import 'colors';
+
+.productCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    width: 21rem;
+    >.ImageContainer{
+        height: 60%;
+        width: 90%;
+    }
+    >.cardContent{
+        text-align: left;
+    }
+    >.buttons{
+        display: grid;
+        grid-template-columns: 30% 60%;
+        grid-gap: 20px;
+        .heart{
+            border: 5px solid pink;
+            color: pink;
+        }
+        .AddToCart{
+            border: 5px solid blue;
+        }
+    }
+}

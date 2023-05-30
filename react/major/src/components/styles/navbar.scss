@@ -1,0 +1,75 @@
+@import 'colors';
+
+nav{
+    background-color: $backgroundColor;
+    color: $theme;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0 5%;
+    cursor: pointer;
+    div{
+        display: flex;
+        align-items: center;
+    }
+    >.menu{
+        display: flex;
+        justify-content: space-around;
+        >.option{
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: $theme;
+            }
+        }
+        >.option a:hover{
+            color: $lightTheme;
+        }
+    }
+    svg{
+        margin: 5px;
+    }
+    .navHeading:hover{
+        font-size: 1.2rem;
+    }
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    float: none;
+    background-color: $backgroundColor;
+    color: $lightTheme;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
