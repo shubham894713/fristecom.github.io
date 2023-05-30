@@ -1,0 +1,1 @@
+# fristecom.github.io
